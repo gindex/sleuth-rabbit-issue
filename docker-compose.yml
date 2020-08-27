@@ -1,0 +1,12 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    ports:
+      - 5672:5672
+      - 15672:15672
+
+  zipkin:
+    image: openzipkin/zipkin-slim
+    ports:
+    - 9411:9411
